@@ -1,0 +1,119 @@
+body{
+  display:flex;
+  flex-direction:column;
+}
+
+canvas{
+    border:8px;
+    margin: 10px;
+    padding:5px;
+}
+
+table {
+    width: 100%;
+  }
+  
+  th {
+    height: 50px;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+  
+  table, tr, td {
+    border: 1px solid #000000;
+  }
+
+
+ .Dino,
+ .Pigeon,
+ .Boat{
+   max-width: 500px;
+   display:flex;
+   flex-direction:column;
+   margin:10px;
+   border-width:5px 5px 5px 5px;
+   border-color: #750c88;
+ }
+ .Dino{
+   background-color: #fa8072;
+   text-align: center;
+ }
+ .Boat{
+   background-color: #87ceeb;
+   align-items: center;
+ }
+ .Pigeon{
+   background-color: #00ff7f;
+   align-items: center;
+ }
+
+ .origami{
+   display:flex;
+   flex-direction:row;
+ }
+
+ .intro{
+   padding-top: 0px;
+   z-index: 1;
+   box-sizing: border-box;
+   box-shadow: 1px 2px 50px 0px #000000;
+ }
+
+ .designs{
+   display:flex;
+   flex-direction:column;
+ }
+
+ .learnOrigami{
+   margin-left: 150px;
+   display:flex;
+   flex-direction: row;
+   margin-bottom: 55px;
+ }
+ .card{
+  z-index: 1;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 50px 0px #920b58;
+ }
+
+ a:link{
+   color:rgb(4, 6, 126);
+  
+ }
+ a:visited{
+   color:rgb(93, 4, 109);
+ }
+
+ .why img:hover{
+  transform:scale(1.2);
+ }
+a{
+  text-decoration: none;
+}
+ 
+ .col-md-4 img:hover{
+  transform:scale(1.15);
+}
+
+.Dino,.Pigeon,.Boat{
+  position:relative;
+  
+ }
+ 
+ .Dino h2,.Pigeon h2,.Boat h2{
+     position:absolute;
+     transform:translate(-50%,-50%);
+     bottom:68%;
+     left:50%;
+     opacity:0;
+ }
+ 
+ .Dino:hover h2, .Pigeon:hover h2, .Boat:hover h2{
+ opacity:1;
+ }
+ 
+ .Dino:hover img, .Pigeon:hover img, .Boat:hover img{
+     opacity:0.5;
+ }
